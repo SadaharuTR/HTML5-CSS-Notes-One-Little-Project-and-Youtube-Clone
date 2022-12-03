@@ -1,0 +1,670 @@
+Html 5 Giriş
+
+<!DOCTYPE html>
+<!-- HTML 5 ile çalıştığımızı/sayfamızın bu şekilde oluştuğunu belirten etiketimiz. -->
+
+<html>
+<!-- tüm etiketlerimizi bünyesinde barındıran kapsayıcı bir etikettir. -->
+
+<head>
+    <!-- sayfamızın tanımlayıcı etiketlerini barındıran, kapsayıcı bir etikettir.  -->
+    <title>Online Alışveriş Sitesi</title>
+    <!-- sitemize sekmede görünecek başlığı eklememizi sağlar. -->
+
+    <meta name="title" content="Alışveriş Sitesi">
+    <meta name="keywords" content="Online Alışveriş">
+    <meta name="description" content="Tüm İhtiyaçlarınız İçin.">
+    <!-- meta etiketi ile sitemizin tanımlayıcı özelliklerini/vitrinini oluşturuyoruz. -->
+
+</head>
+Hent
+<body>
+    <!-- sitemizin görsel ögelerini oluşturduğumuz yerdir. -->
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dicta blanditiis tenetur suscipit, libero ullam beatae
+    obcaecati illum quasi, voluptatem dolorum quidem omnis dolor ipsam exercitationem tempora consequatur corrupti
+    expedita.
+
+    <!-- burada boşluk bırakmamıza rağmen web sayfamızda bitişik yazılacaktır. -->
+    <!-- boşluk bırakmak için <br> etiketini kullanmamız lazım. Kapatma etiketi yoktur. -->
+    <br><br><br>
+    <!-- üç tane br bıraktığımız için 3 satır boşluk bırakacaktır. -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi officia deleniti obcaecati natus
+    temporibus recusandae esse et inventore tenetur praesentium omnis molestias, optio doloremque provident unde sit
+    doloribus error.
+</body>
+
+</html>
+
+
+----------------------------
+
+ Hazır İskelet Oluşturma
+
+<!DOCTYPE html>
+<!-- ! tuşuna basıp tab'a bastığımızda hazır bir şekilde tüm içerikler oluşturulacaktır. Sayfa iskeleti için kısayoldur. -->
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Alışveriş Sitesi</title>
+</head>
+
+<body>
+	<!-- lorem6 dersek 6 kelimelik bir yazı oluşturur. -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolore quae quibusdam eveniet ab ipsa similique
+    tempore quos, harum, recusandae impedit eaque soluta, iste libero corrupti laborum aliquid non! Quam?
+
+</body>
+
+</html>
+
+---------------------
+
+Başlık Etiketleri Oluşturma
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başlik Etiketleri</title>
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur.
+
+    <!-- başlık oluşturmak için kullandığımız h etiketleri vardır. 
+    h1-h6 arası.h değeri arttıkça başlığın boyutu küçülür. 
+    önem sırasına göre bir derecelendirme yaparken kullanılabilir. Örneğin en önemli başlık
+    h1 iken daha az önemli bir başlık h2-h3 olabilir. -->
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur.</h4>   
+    <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+    <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+    <!-- h etiketleri bir kalıptır. CSS'de bu kalıpları daha da şekillendireceğiz. 
+    Arama motorları sitemizi taradığında en fazla baktıkları kelimeler h etiketlerindeki
+    kelimelerdir. Sitemizin etkin bir şekilde arama motorlarında çıkabilmesi için h1-h2'nin
+    kullanımı oldukça önemlidir. Genellikle 1 tane h1 ve 3-4 adet h2 kullanımı tercih edilir.-->
+
+</body>
+</html>
+
+---------------------------------
+
+Paragraf Etiketinin Kullanımı
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraf Etiketi</title>
+</head>
+
+<body>
+    <!-- p etiketi ile paragraf etiketini kullanıyoruz. -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, aliquid debitis. Quibusdam voluptatibus sequi
+        minus possimus deleniti esse consectetur at.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita id sequi commodi odio autem ipsa vero natus
+        incidunt qui at.</p>
+
+    <!-- p etiketini kullanmadan da düz yazı olarak oluşturabiliriz. Ama her ne kadar ayrı bir paragraf
+    gibi oluşturursak yazılar iç içe geçecektir. br kullanarak bu sorunun önüne geçmiştik. -->
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ea voluptatum nostrum consequuntur quis. Totam
+    dolores quam officia odio quisquam? <br><br>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officia blanditiis dignissimos rem inventore doloribus
+    nemo accusantium placeat dolores voluptatibus.
+
+    <!-- Buradaki sorunu çözmüş olduk. Fakat CSS kullanımında paragraf kullanımı daha çok önem
+    kazanacaktır. Mesela paragrafın rengini değiştirmemiz gerektiğinde <p...> içerisinde
+    gerekli işlemleri yapacağız. Yukarıda düz yazı halinde bu tür işlemleri yapamayız. -->
+    <p style="color:blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rem qui animi molestiae, ipsa
+        velit similique doloremque enim impedit dicta?</p>
+    <!-- sayfamızda yukarıdaki paragrafın mavi olduğunu görmüş oluruz.-->
+
+    <!-- paragraf içerisinde de br etiketi kullanılabilir. İlgili yerden itibaren alt
+    satıra alacaktır. -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae ullam rerum? Quidem cupiditate, amet.
+        <br> Praesentium natus harum rerum tempora at fugiat illum quis iure voluptatum, qui nostrum in. Fugit?</p>
+
+</body>
+</html>
+
+---------------------
+
+Yazı Biçimlendirme Etiketleri
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazı Biçimlendirme Etiketleri</title>
+</head>
+
+<body>
+    <h2>Biçimlendirme Etiketleri</h2>
+    <hr>
+    <!-- hr etiketi ekranda yatay bir çizgi tanımlar. -->
+
+    <!-- Bold etiketi: Belirtilen kısmı koyu-kalın yapar. -->
+    <p>Lorem ipsum dolor sit, <b>amet consectetur adipisicing elit. </b> amet consectetur adipisicing elit. Fugiat aliquid pariatur est minus quisquam.
+        Reprehenderit explicabo optio a labore quasi?</p>
+    <!-- Strong etiketi: Belirtilen kısmı koyu-kalın yapar. -->    
+    <p>Lorem ipsum <strong>dolor sit amet consectetur adipisicing</strong>  elit. Dolor, nihil.</p>    
+    <!-- Biçimsel olarak farkları olmasa da strong'un aralıktaki kelime ya kelime gruplarının
+    daha önemli olduğunu belirten bir yapısı vardır. -->
+
+    <!-- Italik etiketi: italik yazı yazmak için kullanılır.-->
+    <p>Lorem <i>ipsum dolor sit amet</i> consectetur adipisicing elit. Aliquid, unde?</p>
+    <!--Emphasis etiketi: i'nin önemli yazıları için olan versiyonu. Görsel olarak aynı.-->
+    <p>Lorem <em>ipsum dolor sit amet</em> consectetur adipisicing elit. Quia, odio.</p>
+    
+    <!-- Underline etiketi: Altı çizili yazmaya yarar. -->
+    <p>Lorem <u>ipsum, dolor sit amet</u> consectetur adipisicing elit. Aliquam, facere!</p>
+     
+    <!-- Superscript etiketi: daha çok x kare gibi ifadelerde tercih edilir. -->
+    <p>x<sup>2</sup></p>
+    <p>Lorem ipsum dolor sit amet consectetur <sup>adipisicing elit.</sup> Atque, asperiores.</p>
+
+    <!-- Subscript etiketi: Yazıyı normal düzeyin altında yazdırır. H2O yazımı gibi. -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- Del etiketi: Online alışverişlerde eski fiyatın üstünün çizilip, yeni fiyat yazıldığı durumlarda kullanılabilir. -->
+    <p>Lorem ipsum, <del>dolor sit amet consectetur</del>  adipisicing elit. Doloribus, veritatis.</p>
+    
+    <p><del>300TL</del> değil. Tamı tamına 200TL.</p>    
+
+    <!-- Mark etiketi: Yazıyı vurgulamak için kullanılır. -->
+    <p>Lorem <mark>ipsum mar dolor sit</mark>, amet consectetur adipisicing elit. Temporibus, dolore.</p>
+
+</body>
+</html>
+
+-------------------------------------------
+
+Sırasız Listeler Oluşturmak
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sırasız Listeler</title>
+</head>
+<body>
+    <!-- Sırasız Liste -->
+    <ul>
+        <!-- içerisinde alt etiketi olan li ile liste elemanlarını ifade etmekte kullanırız. Yazı, görsel vs. -->
+        <li>Lorem ipsum dolor sit.</li>
+        <!-- liste içinde liste kullanabiliriz. -->
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet.
+            </li>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <li>
+                Lorem ipsum dolor sit amet.
+            </li>
+        </ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <br><br>
+    <!-- li etiketlerinin içerisinde <p> paragrafta kullanabiliriz. -->
+    <ul>
+        <li>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </li>
+    </ul>
+</body>
+</html>
+
+---------------------------------
+
+Sırali Listeler Oluşturmak
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sıralı Liste</title>
+</head>
+<body>
+    <!-- ol etiketi: 1'den başlayarak sıralı liste getirir. -->
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+            <ol>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <hr>
+
+    <!-- ol>li*n dersek n tane maddeden oluşan bir sıralı liste gelir.-->
+    <ol>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <hr>
+    <!-- İstediğimiz sayıdan da başlatabiliriz.-->
+    <ol start="3">
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <hr>
+    <!-- Roma rakamları, alfabe vs. de kullanabiliriz. type="a", type="i"...-->
+    <ol start="1" type="I">
+        <li>Lorem ipsum dolor sit.</li>
+        <ol start="1" type="a">
+            <li>Lorem, ipsum.</li>
+            <ol start="1" type="i">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ol>
+            <li>Lorem, ipsum.</li>
+        </ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+</body>
+</html>
+
+-------------------------------------
+
+Resimlerle Çalışmak
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <!-- src ile dosya yolunu, witdh ile genişliğini, height ile boyutunu(çok kullanılmaz
+        çünkü esnemelere yol açabilir.) ayarlayabiliriz. Sadece width ile belirttiğimizde
+        otomatik ayarlayacaktır.-->
+    <!-- <img src="manzara01.jpg" width="400" alt="Manzara 1"> -->
+
+<hr>
+    <!-- resimlerimiz html dosyalarımızla aynı klasörde değilse alt attribute'u ile
+        resmin belirtilmediği durumlarda çıkacak yazıyı yazdırabiliriz. Resim belirtilebiliyorsa
+        bu yazılar çıkmayacaktır
+    <img src="manzara02.jpg" width="400" alt="Manzara 2"> -->
+
+    <!-- Dosya yolunu resimleri içine attığımız klasörü belirterek verdiğimizde; 
+    <img src="images/manzara01.jpg" width="400" alt="Manzara 1">
+    <img src="images/manzara02.jpg" width="400" alt="Manzara 2">
+         Manzara 1-2 yazıları gözükmeyecek ve resimler ekranda çıkacaktır. -->
+
+    <!-- eğer ki images.html'in dosya yolunu değiştirip deneme adlı bir klasöre alırsak. -->
+    <img src="../images/manzara01.jpg" width="400" alt="Manzara 1">
+    <img src="../images/manzara02.jpg" width="400" alt="Manzara 2">
+    <!-- ../ ile bir üst dizinde araması gerektiğini belirtiriz.    -->
+<hr>
+    <!-- bilgisayarımızda bulunmayan, internet linkine sahip olduğumuz bir resmi de ekleyebiliriz. -->
+    <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/01/html5-css3.jpg?resize=498%2C249&ssl=1">
+
+</body>
+</html>
+
+----------------------------
+
+HTML'de Form Uygulamaları
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <!-- Formlar, veri giriş alanlarını barındırır. Input etiketi ile bir veri giriş alanı belirtebiliriz. -->
+    <form>
+        <!-- Alt satıra geçme sorunu olmasın diye <p></p> içine alıyoruz. -->
+        <p>
+            Ad : <input type="text" name="ad">
+        </p>
+        <p>
+            Soyad : <input type="text" name="soyad">
+        </p>
+
+        <p>
+            <!-- type ile farklı türlerden veri giriş alanları oluşturabiliriz. -->
+            E-Posta : <input type="email" name="email">
+        </p>
+
+        <p>
+            Parola : <input type="password" name="password">
+        </p>
+
+        <p>
+            Parolayı Hatırla <input type="checkbox" name="parolahatirla">
+        </p>
+
+        <p>
+            <!-- Sadece birinin seçili olması için name ile isim atayarak gruplandırmamız lazım. -->
+            <!-- veriler server'a yüklenirken name ile yüklenir. -->
+            Cinsiyet : <br>
+            Erkek <input type="radio" name="cinsiyet">
+            Kadın <input type="radio" name="cinsiyet">
+        </p>
+
+        <p>
+        Hobileriniz: <br>
+        Kitap Okumak<input type="checkbox" name="hobi">
+        Film İzlemek<input type="checkbox" name="hobi">
+        Fitness<input type="checkbox" name="hobi">
+        </p>
+
+        <p>
+            Doğum Yeri: <br>
+            <select name="dogumyeri">
+                <option>Eskişehir</option>
+                <option>Mut</option>
+                <option>Strum Graz</option>
+                <option>Paris</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- birden fazla seçim olduğunda, ctrl tuşu yardımıyla birden fazla tercih yapılabilir. -->
+            Doğum Yeri: <br>
+            <select multiple name="dogumyeri">
+                <option>Eskişehir</option>
+                <option>Mut</option>
+                <option>Strum Graz</option>
+                <option>Paris</option>
+            </select>
+        </p>
+    </form>
+
+    <!-- https://www.w3schools.com/html/html_form_input_types.asp
+    sitesinden birbirinden farklı faydalı Form'lara ulabilirsiniz. -->
+
+    <!-- Örnek olarak, reset'a basınca value içerisindeki default olara atanmış değere dönecektir. -->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form>
+
+      <!--gibi gibi örnekler arttırılabilir.-->
+      <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </form>
+</body>
+</html>
+
+---------------------------
+
+Tablolarla Çalışmak
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araç Liste Fiyatları</title>
+</head>
+
+<body>
+    <!-- border ile kutucuk içerisinde alırız.
+    boyutun otomatik değişmesini istemiyorsak width % kullanabiliriz.
+    100% dersek sayfanın boyutu kadar dağılacaktır. -->
+    <table border="2" width=50%>
+        <thead>
+            <tr>
+                <th>Araç Adı</th>
+                <th>Fiyatı</th>
+                <th>Açıklama</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>X</td>
+                <td>100.000$</td>
+                <!-- rowspan ile üst üste hücreleri birleştirebiliriz. -->
+                <td rowspan="2">Açıklama 1 Açıklama 1</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>500.000$</td>
+            </tr>
+            <tr>
+                <!-- colspan ile yanyana hücreleri birleştirebiliriz.        -->
+                <td colspan="3">Açıklama 3 Açıklama 3</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+--------------------------
+
+Sayfalar veya Öğeler Arası Bağlantı Ekleme (Link Verme)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkler</title>
+</head>
+<body>
+    <!-- a etiketi ile link verebilyoruz. href ile de konumu belirtiyoruz. -->
+    <!-- deneme klasörünün içindeki images.html'e link vermiş olduk. -->
+    <a id="sayfabasi" href="deneme/images.html">Resimlere Git!</a>
+    <!-- Resimlere Git'e tıkladığımız an images.html sayfasına gideriz. -->
+    <br><br>
+    <a href="tables.html">Tablolara Git!</a>
+    <!-- Buraya kadar yeni linkleri aynı sayfa içerisinde açacaktır. Yeni sekmede açması için
+    target kullanırız. -->
+    <br><br>
+    <a href="sirali_listeler.html" target="_blank">Listelere Git!</a>
+    <br><br>
+
+    <!-- başka bir internet sitesine de link verebiliriz. -->
+    <a href="https://www.google.com.tr/" target="_blank">Google'da Ara!</a>
+    <br><br>
+
+    <!-- bir görsele ya da bir ögeye de link verebiliriz. -->
+    <!-- manzara01'e tıklandığında images sayfasına gitsin. -->
+    <a href="deneme/images.html">
+        <img src="images/manzara01.jpg" width ="100" alt="">
+    </a>
+    <br><br>
+
+    <!-- indirme dosyası linki de oluşturabiliriz. Dosya sekmede açılamıyorsa indirilir. -->
+    <a href="indirmedosyasi.rar">Dosyayı İndirmek İçin Tıklayınız.</a>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio dignissimos placeat eum vero perspiciatis provident! Cum voluptatum illum suscipit eius veritatis, nobis, possimus praesentium debitis quaerat ipsa reprehenderit ipsum.
+        Vero modi, sed quis consequatur nam architecto totam laborum laboriosam exercitationem hic rem voluptatibus amet possimus ea natus rerum iusto ullam alias reiciendis? Consectetur alias, dolorem hic sit ut at.
+        Nemo voluptatum sint itaque modi omnis veritatis eos nam quas nisi harum aliquid unde praesentium, mollitia vero fuga numquam quasi beatae quod sunt deleniti a consequuntur ea, doloremque adipisci? Maiores!
+        Sit tempore in, labore dolores quod eveniet, incidunt rerum animi similique consequatur earum ipsum, amet alias eum! Enim harum ipsa inventore! Tenetur, quibusdam consectetur. Voluptatem error necessitatibus modi reiciendis. Molestias?
+        Temporibus omnis, pariatur nobis eius ipsam, accusantium quia qui impedit ipsa adipisci doloremque ex corrupti corporis, odit ea similique quaerat consequatur blanditiis maiores voluptate. Officia sunt earum fuga tempore nemo.
+        Dolorum temporibus eius debitis deserunt dolor voluptatum itaque error quasi magni quisquam. Aliquam, corrupti. Possimus id eius, adipisci corrupti quam iure facere, pariatur earum maiores dolores quo, perferendis voluptate incidunt.
+        Amet doloremque reprehenderit enim! Eos reiciendis ipsum itaque possimus iste numquam. Similique doloribus deserunt ratione distinctio, quas totam blanditiis corporis. Sunt laudantium dicta corporis. Consequuntur molestias debitis temporibus reprehenderit omnis?
+        Aliquid, quam! Iste quasi pariatur exercitationem necessitatibus, a voluptatum assumenda velit repellat ut? Suscipit nostrum saepe nesciunt a similique ad hic at, ab consequuntur consequatur placeat sed est, deserunt excepturi?
+        Sint dolorem quo aut necessitatibus alias? Quam ea velit praesentium veritatis, ab repudiandae pariatur error aliquam autem assumenda molestias nesciunt magni ratione consequatur similique esse rem? Sit sapiente ipsam corrupti.
+        Quibusdam tempore cupiditate earum maiores accusamus laudantium nam qui dignissimos, quis voluptas minima eos ratione dolorum eius excepturi reprehenderit expedita dolorem adipisci molestias velit. Vitae accusamus blanditiis suscipit doloremque laborum!
+    </p>
+
+    <p id="p_basi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ducimus suscipit, illo nesciunt labore distinctio asperiores reiciendis sed illum et quasi ex commodi totam animi harum nulla? Totam, quae. Quas?
+    Ut, ab est dolorem eaque nobis mollitia sit cum recusandae nemo ex quod vitae tempora tenetur hic provident itaque, omnis facilis perferendis rerum doloremque! Nobis veritatis architecto est ducimus? Possimus?
+    Sequi voluptas ratione atque accusamus cum voluptate repellat, quo autem reiciendis tenetur facere aut debitis cupiditate laboriosam eaque molestias ullam praesentium quasi necessitatibus beatae dolores? Eius saepe porro voluptatibus quas?
+    Reprehenderit, error consequatur quia sint vitae libero reiciendis iure quaerat consectetur numquam optio id velit, eligendi dolores, eius natus voluptatem vel non distinctio officiis eaque. Eius vitae laborum accusantium consectetur.
+    Accusantium, tempore. Eos dolores molestias consectetur nam fugiat. Vitae quos facilis hic quibusdam aut vero sit, tenetur voluptatum porro dolor consectetur mollitia, autem et impedit harum cupiditate sed dolorem magnam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, distinctio dignissimos placeat eum vero perspiciatis provident! Cum voluptatum illum suscipit eius veritatis, nobis, possimus praesentium debitis quaerat ipsa reprehenderit ipsum.
+        Vero modi, sed quis consequatur nam architecto totam laborum laboriosam exercitationem hic rem voluptatibus amet possimus ea natus rerum iusto ullam alias reiciendis? Consectetur alias, dolorem hic sit ut at.
+        Nemo voluptatum sint itaque modi omnis veritatis eos nam quas nisi harum aliquid unde praesentium, mollitia vero fuga numquam quasi beatae quod sunt deleniti a consequuntur ea, doloremque adipisci? Maiores!
+        Sit tempore in, labore dolores quod eveniet, incidunt rerum animi similique consequatur earum ipsum, amet alias eum! Enim harum ipsa inventore! Tenetur, quibusdam consectetur. Voluptatem error necessitatibus modi reiciendis. Molestias?
+        Temporibus omnis, pariatur nobis eius ipsam, accusantium quia qui impedit ipsa adipisci doloremque ex corrupti corporis, odit ea similique quaerat consequatur blanditiis maiores voluptate. Officia sunt earum fuga tempore nemo.
+        Dolorum temporibus eius debitis deserunt dolor voluptatum itaque error quasi magni quisquam. Aliquam, corrupti. Possimus id eius, adipisci corrupti quam iure facere, pariatur earum maiores dolores quo, perferendis voluptate incidunt.
+        Amet doloremque reprehenderit enim! Eos reiciendis ipsum itaque possimus iste numquam. Similique doloribus deserunt ratione distinctio, quas totam blanditiis corporis. Sunt laudantium dicta corporis. Consequuntur molestias debitis temporibus reprehenderit omnis?
+        Aliquid, quam! Iste quasi pariatur exercitationem necessitatibus, a voluptatum assumenda velit repellat ut? Suscipit nostrum saepe nesciunt a similique ad hic at, ab consequuntur consequatur placeat sed est, deserunt excepturi?
+        Sint dolorem quo aut necessitatibus alias? Quam ea velit praesentium veritatis, ab repudiandae pariatur error aliquam autem assumenda molestias nesciunt magni ratione consequatur similique esse rem? Sit sapiente ipsam corrupti.
+        Quibusdam tempore cupiditate earum maiores accusamus laudantium nam qui dignissimos, quis voluptas minima eos ratione dolorum eius excepturi reprehenderit expedita dolorem adipisci molestias velit. Vitae accusamus blanditiis suscipit doloremque laborum!
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ducimus suscipit, illo nesciunt labore distinctio asperiores reiciendis sed illum et quasi ex commodi totam animi harum nulla? Totam, quae. Quas?
+    Ut, ab est dolorem eaque nobis mollitia sit cum recusandae nemo ex quod vitae tempora tenetur hic provident itaque, omnis facilis perferendis rerum doloremque! Nobis veritatis architecto est ducimus? Possimus?
+    Sequi voluptas ratione atque accusamus cum voluptate repellat, quo autem reiciendis tenetur facere aut debitis cupiditate laboriosam eaque molestias ullam praesentium quasi necessitatibus beatae dolores? Eius saepe porro voluptatibus quas?
+    Reprehenderit, error consequatur quia sint vitae libero reiciendis iure quaerat consectetur numquam optio id velit, eligendi dolores, eius natus voluptatem vel non distinctio officiis eaque. Eius vitae laborum accusantium consectetur.
+    Accusantium, tempore. Eos dolores molestias consectetur nam fugiat. Vitae quos facilis hic quibusdam aut vero sit, tenetur voluptatum porro dolor consectetur mollitia, autem et impedit harum cupiditate sed dolorem magnam.
+    </p>
+
+    <!-- Başa Dön Linki Oluşturma: Sayfanın başına bir Id eklememiz lazım. -->
+    <a href="#sayfabasi">Başa Dön!</a>
+    <br>
+    <a href="#p_basi">Paragrafta Başa Dön!</a>
+
+</body>
+</html>
+
+-------------------------------
+
+Div ve Span Etiketleri
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div ve Span</title>
+</head>
+
+<body>
+    <!-- Sayfa içerisindeki elemanları gruplandırmak için kullanıyoruz. Gruplandırılan elemanlara
+    gruplar üzerinden aynı özellikleri kazandırabiliyoruz. 
+    Div blok etikettir, inline değildir.
+    Span inline'dır yani kaldığı yerden devam eder.-->
+
+    <!-- değişim blok içerisindeki her yere yansır. -->
+    <div id="header" style="color: aquamarine;">
+        <h1>Başlık</h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <div>Corporis repellat, rerum</div> facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor,<span> sit amet consectetur adipisicing elit.</span> Corporis repellat, rerum facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor, <span style="color:blue">sit amet consectetur adipisicing elit.</span> Corporis repellat, rerum facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+    </div>
+
+    <div id="menu">
+        Menüler
+    </div>
+
+    <div id="content">
+        İçerik Bölümü
+    </div>
+
+    <div id="footer">
+        Sayfa Hakkında Açıklamalar
+    </div>
+
+</body>
+
+</html>
+
+---------------------------------------
+
+iFrame Kullanımı
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame Kullanımı</title>
+</head>
+
+<body>
+    <!-- inline Frame'in kısaltması olan iFrame, web sayfasının içerisine başka 
+    sayfaların içeriklerini veya sayfanın tamamını yerleştirmenizi sağlar. -->
+    <iframe src="forms.html" frameborder="1"></iframe>
+    <br>
+    <!-- başka bir websitesini de yerleştirebiliriz. -->
+    <!-- <iframe src="https://www.turkanime.co/" frameborder="0" width="100% height=" 500px"></iframe> -->
+    <br>
+    <!-- youtube video yerleştirmesi de yapabiliriz. -->
+    <iframe width="664" height="374" src="https://www.youtube.com/embed/pmT2HAK9758"
+        title="AHLAKSIZ KANALLAR LİSTESİ // BOZUK MİKROFON #5" frameborder="3"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+</body>
+
+</html>
+
+

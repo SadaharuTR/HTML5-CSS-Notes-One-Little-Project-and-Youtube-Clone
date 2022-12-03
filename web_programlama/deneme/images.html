@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <!-- src ile dosya yolunu, witdh ile genişliğini, height ile boyutunu(çok kullanılmaz
+        çünkü esnemelere yol açabilir.) ayarlayabiliriz. Sadece width ile belirttiğimizde
+        otomatik ayarlayacaktır.-->
+    <!-- <img src="manzara01.jpg" width="400" alt="Manzara 1"> -->
+
+<hr>
+    <!-- resimlerimiz html dosyalarımızla aynı klasörde değilse alt attribute'u ile
+        resmin belirtilmediği durumlarda çıkacak yazıyı yazdırabiliriz. Resim belirtilebiliyorsa
+        bu yazılar çıkmayacaktır
+    <img src="manzara02.jpg" width="400" alt="Manzara 2"> -->
+
+    <!-- Dosya yolunu resimleri içine attığımız klasörü belirterek verdiğimizde; 
+    <img src="images/manzara01.jpg" width="400" alt="Manzara 1">
+    <img src="images/manzara02.jpg" width="400" alt="Manzara 2">
+         Manzara 1-2 yazıları gözükmeyecek ve resimler ekranda çıkacaktır. -->
+
+    <!-- eğer ki images.html'in dosya yolunu değiştirip deneme adlı bir klasöre alırsak. -->
+    <img src="../images/manzara01.jpg" width="400" alt="Manzara 1">
+    <img src="../images/manzara02.jpg" width="400" alt="Manzara 2">
+    <!-- ../ ile bir üst dizinde araması gerektiğini belirtiriz.    -->
+<hr>
+    <!-- bilgisayarımızda bulunmayan, internet linkine sahip olduğumuz bir resmi de ekleyebiliriz. -->
+    <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/01/html5-css3.jpg?resize=498%2C249&ssl=1">
+
+</body>
+</html>

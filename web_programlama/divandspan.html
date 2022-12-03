@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div ve Span</title>
+</head>
+
+<body>
+    <!-- Sayfa içerisindeki elemanları gruplandırmak için kullanıyoruz. Gruplandırılan elemanlara
+    gruplar üzerinden aynı özellikleri kazandırabiliyoruz. 
+    Div blok etikettir, inline değildir.
+    Span inline'dır yani kaldığı yerden devam eder.-->
+
+    <!-- değişim blok içerisindeki her yere yansır. -->
+    <div id="header" style="color: aquamarine;">
+        <h1>Başlık</h1>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <div>Corporis repellat, rerum</div> facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor,<span> sit amet consectetur adipisicing elit.</span> Corporis repellat, rerum facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor, <span style="color:blue">sit amet consectetur adipisicing elit.</span> Corporis repellat, rerum facilis dicta ratione
+            quisquam. Consequatur reiciendis aliquam numquam repellendus.
+        </p>
+    </div>
+
+    <div id="menu">
+        Menüler
+    </div>
+
+    <div id="content">
+        İçerik Bölümü
+    </div>
+
+    <div id="footer">
+        Sayfa Hakkında Açıklamalar
+    </div>
+
+</body>
+
+</html>
