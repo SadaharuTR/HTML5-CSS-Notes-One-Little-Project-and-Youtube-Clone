@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Youtube Clone</title>
+    <style>
+        /* switching inline-block => block */
+        .thumbnail{
+            width: 300px;
+            display: block;
+            /* height: 300px;
+            object-fit: contain;
+            object-position: right;
+            border-width: 2px;
+            border-color: red;
+            border-style: solid; */
+        }
+        .search-bar{
+            color: azure;
+        }
+        .video-title {
+            width: 300px;
+        }
+        /* means both video-auhor and video-stats classes have this set of styles.*/
+        /* switching block => inline-block */
+        /* .video-author,
+        .video-stats{
+            display: inline-block;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="thumbnails/hq720.avif">
+
+    <!-- block element: like paragraph as default, takes up the entire line.  -->
+    <!-- inline-block element: only takes up as much space as needed. example; img and input
+    elements. -->
+    <!-- inline elements: appear within a line of text. example; strong -->
+    <p class="video-title">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, iste.
+    </p>
+    <!-- switching block => inline-block  -->
+    <p class="video-author">
+        Abou Bakar
+    </p>
+    <p class="video-stats">
+        3.5M views &#183; 6 months ago
+    </p>
+</body>
+
+</html>

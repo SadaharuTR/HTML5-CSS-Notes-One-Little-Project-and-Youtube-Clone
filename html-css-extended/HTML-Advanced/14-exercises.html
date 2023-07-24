@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Position</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .discount {
+            position: absolute;
+            background-color: black;
+            color: aliceblue;
+            top: 10px;
+            right: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .add-button {
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="example-images/thumb1.png">
+        <div class="discount">20% OFF</div>
+        <div class="button-container">
+            <button class="add-button">Add to Chart</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Flexbox Exercise</title>
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            border-width: 1px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            padding: 8px;
+        }
+        .all-inboxes{
+            color: grey;
+        }
+        .content{
+            display: flex;
+        }
+        .profile-picture{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .information-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .promotion, .sale{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .sale{
+            margin-bottom: 4px;
+        }
+        .greeting{
+            font-size: 18px;
+            color: grey;
+        }
+        .promotion{
+            display: flex;
+            justify-content: space-between;
+        }
+        .time{
+            color: grey;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="all-inboxes">ALL INBOXES</div>
+        <div class="content">
+            <div class="profile">
+                <img class="profile-picture" src="example-images/cat.jpg">
+            </div>
+            <div class="information-area">
+                <div class="promotion">
+                    <div>Chewy Promotions</div>
+                    <div class="time">4:58 PM</div>
+                </div>
+                <div class="sale">Biggest sales of the year!</div>
+                <div class="greeting">Hey there! We're writing to tell you about our...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

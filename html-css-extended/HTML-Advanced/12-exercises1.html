@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+        }
+        .div1{
+            background-color: lightblue;
+            width: 200px;
+        }
+        .div2{
+            background-color: lightpink;
+            width: 75px;
+        }
+        .flexbox1{
+            display: flex;
+            flex-direction: row;
+        }
+        .divA{
+            background-color: lightblue;
+            width: 50px;
+        }
+        .divB{
+            background-color: lightpink;
+            flex: 1;
+        }
+        .divC{
+            background-color: rgb(107, 29, 41);
+            width: 75px;
+        }
+        .flexbox2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .divX{
+            background-color: lightblue;
+        }
+        .divY{
+            background-color: lightpink;
+        }
+        .divZ{
+            background-color: rgb(107, 29, 41);
+        }
+        .divT{
+            background-color: rgb(224, 186, 191);
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="div1">200px</div>
+        <div class="div2">75px</div>
+    </div>
+    <hr>
+    <div class="flexbox1">
+        <div class="divA">50px</div>
+        <div class="divB">Flex: 1</div>
+        <div class="divC">75px</div>
+    </div>
+    <hr>
+    <div class="flexbox2">
+        <div class="divX">50px</div>
+        <div class="divY">Flex: 1</div>
+        <div class="divZ">75px</div>
+        <div class="divT">75px</div>
+    </div>
+</body>
+</html>

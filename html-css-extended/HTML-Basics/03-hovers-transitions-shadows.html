@@ -1,0 +1,78 @@
+<style>   
+    /* applies when we don't hover */
+    .subscribe-button {
+        background-color: rgb(189, 8, 8); 
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        /* transition effect to specified property */
+        transition: opacity 0.15s;
+    }
+    /* only applies when we hover the button*/
+    /* it's called pseudo class, basically adds extra styles in certain situation. */
+    .subscribe-button:hover {
+        /* property of fade in-out effect */
+        opacity: 0.8;
+    }
+    /* only applies when we click on the button */
+    .subscribe-button:active{
+        opacity: 0.5;
+    }
+    .join-button {
+        background-color: white; 
+        border-color: rgb(0, 81, 255);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(0, 81, 255);
+        height: 36px;
+        width: 65px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        /* we can apply transition to multiple property */
+        transition: background-color 0.5s, 
+            color 0.5s;
+    }
+    .join-button:hover{
+        background-color: rgb(0, 81, 255);
+        color: white;
+    }
+    .join-button:active{
+        opacity: 0.7;
+    }
+    
+    .tweet-button {
+        background-color: rgb(0, 136, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px; 
+        transition: box-shadow 0.3s;    
+    }
+    .tweet-button:hover{
+        /*box-shadow: horizontal vertical blur color */
+        /* rgba is rgb but with a means opacity */
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+
+<button class="join-button">
+    JOIN
+</button>
+
+<button class="tweet-button">
+    Tweet
+</button>

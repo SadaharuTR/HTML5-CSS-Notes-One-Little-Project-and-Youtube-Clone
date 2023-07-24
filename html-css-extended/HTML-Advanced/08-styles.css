@@ -1,0 +1,32 @@
+.example{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.example2{
+    display: inline-block;
+    width: 250px;
+    vertical-align: middle;
+}
+
+.example3{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.searching2{
+    font-size: 10px;
+    width: 250px;
+    padding: 8px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

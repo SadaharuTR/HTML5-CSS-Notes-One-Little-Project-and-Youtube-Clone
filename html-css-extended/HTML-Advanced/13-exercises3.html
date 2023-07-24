@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sidebar1 {
+            background-color: rgb(45, 45, 45);
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .sidebar2 {
+            background-color: rgb(73, 73, 73);
+            position: fixed;
+            left: 70px;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .profile-picture {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: white;
+            font-size: 14px;
+        }
+
+        .create-new {
+            color: rgb(150, 150, 150);
+            font-size: 25px;
+        }
+
+        .channels{
+            color: rgb(150, 150, 150);
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar1">
+        <div>
+            <img class="profile-picture" src="example-images/cat.jpg">
+        </div>
+        <div>
+            <img class="profile-picture" src="example-images/thumb1.png">
+        </div>
+        <div>
+            <img class="profile-picture" src="example-images/thumb3.png">
+        </div>
+    </div>
+    <div class="sidebar2">
+        <div class="info">
+            <div class="name">INFO</div>
+            <div class="create-new">+</div>
+        </div>
+        <div class="channels">
+            # new-videos
+        </div>
+        <div class="channels">
+            # updates
+        </div>
+        <div class="channels">
+            # faq
+        </div>
+    </div>
+</body>
+
+</html>
